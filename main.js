@@ -36,10 +36,10 @@ Webcam.set({
     image_format:'jpeg',
     jpeg_quality:90
 });
- function takeSelfie()
+function takeSelfie()
 {
     Webcam.snap(function(data_uri) {
-        document.getElementById("result").innerHTML = '<img id="selfieImage" src="'+data_uri+'"/>';
+        document.getElementById("resultado").innerHTML = '<img id="selfieImage" src="'+data_uri+'"/>';
     });
 }
 function save()
