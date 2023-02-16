@@ -36,14 +36,16 @@ Webcam.set({
     image_format:'jpeg',
     jpeg_quality:90
 });
-function takeSelfie(){
-    Webcam.snap(function(data_uri){
-        document.getElementById("resultado").innerHTML = '<img id="selfieImage"src="'+data_uri+'"/>';
-    })
+ function takeSelfie()
+{
+    Webcam.snap(function(data_uri) {
+        document.getElementById("result").innerHTML = '<img id="selfieImage" src="'+data_uri+'"/>';
+    });
 }
-function save(){
-    link = document.getElementById("link");
-    image = document.getElementById("selfieImage").src;
-    link.href = image;
-    link.click();
+function save()
+{
+  link = document.getElementById("link");
+  image = document.getElementById("selfieImage").src ;
+  link.href = image;
+  link.click();
 }
